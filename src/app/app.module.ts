@@ -7,7 +7,9 @@ import { FirstComponentComponent } from './components/first-component/first-comp
 import { ParentDataComponent } from './components/parent-data/parent-data.component';
 import { DirectivesComponent } from './components/directives/directives.component';
 import { IfRenderComponent } from './components/if-render/if-render.component';
-import { EventosComponent } from './components/eventos/eventos.component'
+import { EventosComponent } from './components/eventos/eventos.component';
+import { EmitterComponent } from './components/emitter/emitter.component';
+import { ChangeNumberComponent } from './components/change-number/change-number.component'
 
 
 @NgModule({
@@ -18,6 +20,8 @@ import { EventosComponent } from './components/eventos/eventos.component'
     DirectivesComponent,
     IfRenderComponent,
     EventosComponent,
+    EmitterComponent,
+    ChangeNumberComponent,
   ],
   imports: [
     BrowserModule,
