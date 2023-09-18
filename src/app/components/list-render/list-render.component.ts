@@ -10,33 +10,11 @@ import { ListService } from 'src/app/services/list/list.service';
 })
 export class ListRenderComponent {
 
-  constructor(private listService: ListService) { }
+  constructor(private listService: ListService) { 
+    this.getAnimals()
+  }
 
-  animals: Animal[] = [
-    {
-      name: 'turca',
-      type: 'dog',
-      age: 10
-    },
-
-    {
-      name: 'tom',
-      type: 'cat',
-      age: 16
-    },
-
-    {
-      name: 'frida',
-      type: 'dog',
-      age: 25
-    },
-
-    {
-      name: 'bob',
-      type: 'horse',
-      age: 5
-    }
-  ]
+  animals: Animal[] = []
 
   animalDetails = ''
 
@@ -46,5 +24,9 @@ export class ListRenderComponent {
 
   removeAnimal(animal: Animal) {
     this.animals = this.listService.remove(this.animals, animal)
+  }
+  
+  getAnimals(): void {
+    this.listService.getAll().subscribe((animals) => (this.animals = animals))
   }
 }
