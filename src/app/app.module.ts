@@ -14,7 +14,8 @@ import { EmitterComponent } from './components/emitter/emitter.component';
 import { ChangeNumberComponent } from './components/change-number/change-number.component';
 import { ListRenderComponent } from './components/list-render/list-render.component';
 import { PipesComponent } from './components/pipes/pipes.component';
-import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component'
+import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
+import { ItemDetailComponent } from './components/item-detail/item-detail.component'
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { TwoWayBindingComponent } from './components/two-way-binding/two-way-bin
     ListRenderComponent,
     PipesComponent,
     TwoWayBindingComponent,
+    ItemDetailComponent,
   ],
   imports: [
     BrowserModule,
